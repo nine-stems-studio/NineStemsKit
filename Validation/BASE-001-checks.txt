@@ -1,0 +1,117 @@
+BASE-001 validation / 2026-10-29
+Swift 6.3.3 / Xcode 26.6 (17F113) / iOS Simulator SDK 26.5
+
+$ bash packages/NineStemsKit/Scripts/verify.sh
+warning: <user-home>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'ninestemskit': failed storing manifest for 'ninestemskit' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/2] Write sources
+[1/2] Write swift-version--58304C5D6DBC2206.txt
+[3/4] Emitting module NSExport
+[4/4] Compiling NSExport Export.swift
+Build complete! (1.07s)
+warning: <user-home>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'ninestemskit': failed storing manifest for 'ninestemskit' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/3] Write sources
+[1/3] Write swift-version--58304C5D6DBC2206.txt
+[3/6] Emitting module NineStemsKitTests
+[4/6] Compiling NineStemsKitTests StoreTests.swift
+[4/6] Write Objects.LinkFileList
+[5/6] Linking NineStemsKitPackageTests
+Build complete! (1.58s)
+Test Suite 'All tests' started at 2026-10-29 07:21:21.142.
+Test Suite 'NineStemsKitPackageTests.xctest' started at 2026-10-29 07:21:21.145.
+Test Suite 'PDFTests' started at 2026-10-29 07:21:21.145.
+Test Case '-[NineStemsKitTests.PDFTests testBothPaperSizesAndLongTablePaginationPreserveAllContent]' started.
+Test Case '-[NineStemsKitTests.PDFTests testBothPaperSizesAndLongTablePaginationPreserveAllContent]' passed (0.175 seconds).
+Test Case '-[NineStemsKitTests.PDFTests testDesignComponentsMatchReviewedSnapshot]' started.
+Test Case '-[NineStemsKitTests.PDFTests testDesignComponentsMatchReviewedSnapshot]' passed (0.337 seconds).
+Test Case '-[NineStemsKitTests.PDFTests testExamplePDFMatchesReviewedPixels]' started.
+Test Case '-[NineStemsKitTests.PDFTests testExamplePDFMatchesReviewedPixels]' passed (0.601 seconds).
+Test Case '-[NineStemsKitTests.PDFTests testInvalidContentFailsInsteadOfSilentlyOmittingIt]' started.
+Test Case '-[NineStemsKitTests.PDFTests testInvalidContentFailsInsteadOfSilentlyOmittingIt]' passed (0.001 seconds).
+Test Case '-[NineStemsKitTests.PDFTests testOneOversizeRowAndParagraphFlowAcrossPages]' started.
+Test Case '-[NineStemsKitTests.PDFTests testOneOversizeRowAndParagraphFlowAcrossPages]' passed (0.057 seconds).
+Test Suite 'PDFTests' passed at 2026-10-29 07:21:22.316.
+	 Executed 5 tests, with 0 failures (0 unexpected) in 1.171 (1.171) seconds
+Test Suite 'PurchaseTests' started at 2026-10-29 07:21:22.316.
+Test Case '-[NineStemsKitTests.PurchaseTests testAnnualExpiryRemovesEntitlementWhileControllerRemainsAlive]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testAnnualExpiryRemovesEntitlementWhileControllerRemainsAlive]' passed (0.084 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testApprovalUpdateUnlocksAndOlderRefundReconcilesCurrentAccess]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testApprovalUpdateUnlocksAndOlderRefundReconcilesCurrentAccess]' passed (0.007 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testAuthoritativeEmptyRestoreClearsCacheAndFailedRestoreKeepsAccess]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testAuthoritativeEmptyRestoreClearsCacheAndFailedRestoreKeepsAccess]' passed (0.002 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testCacheIsIsolatedByProductConfiguration]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testCacheIsIsolatedByProductConfiguration]' passed (0.001 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testExpiredAnnualDoesNotGrantAccessAndFutureAnnualDoes]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testExpiredAnnualDoesNotGrantAccessAndFutureAnnualDoes]' passed (0.002 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testForeignProductAndWrongKindCannotUnlock]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testForeignProductAndWrongKindCannotUnlock]' passed (0.001 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testPendingAndCancellationNeverGrantAccess]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testPendingAndCancellationNeverGrantAccess]' passed (0.001 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testRevocationUpdateRemovesCachedAccess]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testRevocationUpdateRemovesCachedAccess]' passed (0.002 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testStaleRefreshCannotOverwriteNewPurchase]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testStaleRefreshCannotOverwriteNewPurchase]' passed (0.002 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testUnverifiedUpdateCannotUnlock]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testUnverifiedUpdateCannotUnlock]' passed (0.001 seconds).
+Test Case '-[NineStemsKitTests.PurchaseTests testVerifiedPurchasePersistsBeforeFinishAndRestoresOffline]' started.
+Test Case '-[NineStemsKitTests.PurchaseTests testVerifiedPurchasePersistsBeforeFinishAndRestoresOffline]' passed (0.002 seconds).
+Test Suite 'PurchaseTests' passed at 2026-10-29 07:21:22.423.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.105 (0.106) seconds
+Test Suite 'StoreTests' started at 2026-10-29 07:21:22.423.
+Test Case '-[NineStemsKitTests.StoreTests testAtomicExportAndFilenameValidation]' started.
+Test Case '-[NineStemsKitTests.StoreTests testAtomicExportAndFilenameValidation]' passed (0.004 seconds).
+Test Case '-[NineStemsKitTests.StoreTests testBackupRoundTripAndClear]' started.
+CoreData: error: unable to check registration for posting store changed notification
+CoreData: error: unable to check registration for posting store changed notification
+CoreData: error: unable to check registration for posting store changed notification
+Test Case '-[NineStemsKitTests.StoreTests testBackupRoundTripAndClear]' passed (0.025 seconds).
+Test Case '-[NineStemsKitTests.StoreTests testCitationsRejectUnsafeLinksAndRetainDate]' started.
+Test Case '-[NineStemsKitTests.StoreTests testCitationsRejectUnsafeLinksAndRetainDate]' passed (0.000 seconds).
+Test Case '-[NineStemsKitTests.StoreTests testImportFailureRollsBackDeleteAndInsert]' started.
+CoreData: error: unable to check registration for posting store changed notification
+Test Case '-[NineStemsKitTests.StoreTests testImportFailureRollsBackDeleteAndInsert]' passed (0.002 seconds).
+Test Case '-[NineStemsKitTests.StoreTests testInvalidBackupNeverInvokesImportAndWrongAppIsRejected]' started.
+Test Case '-[NineStemsKitTests.StoreTests testInvalidBackupNeverInvokesImportAndWrongAppIsRejected]' passed (0.003 seconds).
+Test Case '-[NineStemsKitTests.StoreTests testLocalCountersAreOptInPersistentAndEraseOnDisable]' started.
+Test Case '-[NineStemsKitTests.StoreTests testLocalCountersAreOptInPersistentAndEraseOnDisable]' passed (0.002 seconds).
+Test Suite 'StoreTests' passed at 2026-10-29 07:21:22.460.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 0.036 (0.037) seconds
+Test Suite 'NineStemsKitPackageTests.xctest' passed at 2026-10-29 07:21:22.460.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 1.312 (1.315) seconds
+Test Suite 'All tests' passed at 2026-10-29 07:21:22.460.
+	 Executed 22 tests, with 0 failures (0 unexpected) in 1.312 (1.318) seconds
+◇ Test run started.
+↳ Testing Library Version: 1902
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.
+
+$ bash apps/_Sample/verify-compile.sh
+warning: <user-home>/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+warning: <user-home>/Library/Caches/org.swift.swiftpm is not accessible or not writable, disabling user-level cache features.
+warning: 'ninestemskit': failed storing manifest for 'ninestemskit' in cache: attempt to write a readonly database
+[0/1] Planning build
+Building for debugging...
+[0/2] Write sources
+[1/2] Write swift-version--58304C5D6DBC2206.txt
+[3/4] Emitting module NSExport
+[4/4] Compiling NSExport Export.swift
+Build complete! (1.08s)
+iOS 17 library build and Sample app/test source compilation passed. This does not run simulator tests.
+
+Public API: 163 explicit source symbols; 0 missing doc comments.
+PDF/Design baselines visually inspected.
+
+Not passed: iPhone 17 xcodebuild test (exit 74): CoreSimulator unavailable, user cache writes prohibited; isolated-cache attempt fails in nested sandbox.
+Not completed: real StoreKit runtime tests, share/file/mail manual checks, iPhone screenshots.
+Not completed: git add/commit; actual worktree index.lock outside writable roots: Operation not permitted.
+origin/main...HEAD contains no task source changes until commit.

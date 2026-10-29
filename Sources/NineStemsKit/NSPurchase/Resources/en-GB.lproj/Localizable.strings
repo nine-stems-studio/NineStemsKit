@@ -1,0 +1,10 @@
+/* Shared paywall status, accessibility and link labels. Main copy is supplied by the app. */
+"Access unlocked" = "Access unlocked";
+"Purchase operation in progress" = "Purchase operation in progress";
+"Awaiting purchase approval." = "Awaiting purchase approval.";
+"Retry loading products" = "Retry loading products";
+"Privacy" = "Privacy";
+"Terms" = "Terms";
+"This product is not available. Please try again." = "This product is not available. Please try again.";
+"The purchase could not be verified. Please restore purchases or try again." = "The purchase could not be verified. Please restore purchases or try again.";
+"The configured product must be a lifetime unlock or an annual subscription." = "The configured product must be a lifetime unlock or an annual subscription.";
